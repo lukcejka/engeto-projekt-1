@@ -1,0 +1,561 @@
+:root {
+    --hneda: #3A2E2F;
+    --svetlahneda: #644B4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* NAVIGACE */
+nav {
+    background: var(--hneda);
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+/* PRO TABLETY A TELEFONY */
+@media (max-width: 992px){
+    .hamburger-icon {
+        display: flex;
+        /* background-color: #fff; */
+        /* margin-right: 20px; */
+        justify-content: flex-end;
+        padding-right: 40px;
+        padding-bottom: 40px;  
+    }
+    .hamburger-icon img {
+        width: 45px;
+        cursor: pointer;
+       
+    }
+    }
+
+.menu-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* PRO TABLETY A TELEFON */
+@media (max-width: 992px){
+    .menu-wrapper a {
+        display: none;
+    }
+    }
+
+.menu-wrapper ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; 
+    flex-grow: 1;
+}
+
+.menu-wrapper ul li {
+    padding: 20px;
+}
+
+.menu-wrapper a {
+    text-decoration: none;
+    color: white;
+    font-weight: 15px;
+}
+
+
+/* ZERO SECTION */
+.zero-section {
+    background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.hero-section-wrapper {
+    position: relative;
+    height: 100%;
+    width: 70%;
+    border: 10px solid red;
+    margin: 0 auto;
+}
+
+.zero-text {
+    color: #fff;
+    position: absolute;
+    right: 15%;
+    bottom: 200px;
+    font-size: 75px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+.zero-text {
+    right: 5%;
+    bottom: 150px;
+}
+}
+
+/* PRO TELEFONY */
+@media (max-width: 440px){
+    .zero-text {
+        right: 5%;
+        bottom: 130px;
+        font-size: 50px;
+    }
+    }
+
+/* ABOUT-US SECTION */
+.about-us {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    gap: 100px;
+    padding: 50px 0;
+    /* align-items: center; */
+    /* justify-content: flex-end;  */
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px) {
+.about-us {
+    width: 90%;
+}
+}
+
+/* PRO TELEFON */
+@media (max-width: 440px) {
+    .about-us {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+    }
+    }
+
+.about-usText {
+    flex: 1;
+    margin-left: 60px;
+    /* border: 1px solid black; */
+    /* font-size: 20px; */
+}
+
+/* PRO TELEFON */
+@media (max-width: 440px) {
+    .about-usText {
+        width: 100%;
+        margin-left: 0;
+    }
+    }
+
+.about-usText h2 {
+    padding-bottom: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about-usText h2 {
+        text-align: center;
+        font-size: 45px;
+    }
+    }
+
+.about-usImage {
+    /* background-image: url(images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg); */
+    /* flex-basis: 700px; */
+    /* flex-grow: 1; */
+    background-size: cover;
+    background-position: 20% 80%;
+    border-radius: 4px;
+    flex: 1;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px) {
+    .about-usImage {
+        height: 500px;
+    }
+    }
+
+.about-usImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* WHAT WE DO SECTION */
+.what-we-doContainer {
+    background-color: var(--hneda);
+}
+
+.what-we-do {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    /* background-color: var(--hneda); */
+}
+
+.what-we-do.what-we-do p, .what-we-do.what-we-do h2 {
+    color: white;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px) {
+    .what-we-do.what-we-do p {
+        font-size: 18px;    
+    }
+    }
+
+.what-we-do.what-we-do h2 {
+    padding-bottom: 20px;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px) {
+    .what-we-do.what-we-do h2 {
+        font-size: 35px;
+    }
+    }
+
+/* PRO TELEFON */
+@media (max-width: 440px) {
+    .what-we-do.what-we-do h2 {
+        font-size: 35px;
+    }
+    }
+
+.what-we-doIcons {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 5px; 
+    /* width: calc(100% - 10px); */
+}
+
+.icon {
+   /*  flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 20px; */
+    margin: 40px 0;
+
+}
+
+.icon img {
+    max-width: 20%;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .icon img {
+        max-width: 40%;
+        padding-bottom: 15px;   
+    }
+    .what-we-doIcons .icon p {
+         font-size: 22px;
+         font-weight: bold;
+    }
+    }
+
+/* PRO TELEFON */
+@media (max-width: 440px) {
+    .what-we-doIcons{
+        flex-direction: column;
+    }
+    }
+
+
+/* PHOTOGALLERY SECTION */
+.photogallery {
+    width: 55%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 1px solid black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .photogallery {
+        width: 90%; 
+    }
+    }
+
+/* PRO TELEFONY */
+@media (max-width: 440px){
+    .photogallery {
+        width: 90%;
+        flex-direction: column; 
+    }
+    }
+
+.photogalleryImg {
+    /* position: absolute; */
+    flex-basis: calc(33.3% - 40px);
+    overflow: hidden;
+    
+}
+
+.photogalleryImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .photogalleryImg img {
+        min-height: 300px;
+    }
+    }
+
+.text {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .text {
+        font-size: 4rem;
+        text-align: center;
+        min-height: 300px;
+    }
+    }
+
+
+/* CONTACT US */
+.contactUs {
+    background-color: var(--svetlahneda);
+}
+
+
+
+.contactUs-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: center; */
+    padding: 50px;
+    
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .contactUs-wrapper {
+        width: 90%; 
+        padding: 50px 0;
+
+    }
+    }
+
+/* PRO TELEFONY */
+@media (max-width: 440px){
+    .contactUs-wrapper {
+        width: 90%; 
+        display: flex;
+        flex-direction: column; 
+    }
+    }
+
+.contactUs-wrapper h2 {
+    color: #fff;
+    /* text-align: center; */
+}
+
+/* PRO TELEFONY */
+@media (max-width: 440px){
+.contactUs-wrapper h2 {
+    padding-bottom: 25px;
+}
+}
+
+.contactUs-cont1 {
+    flex: 1;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+.contactUs-cont1 h2 {
+    font-size: 50px;
+    text-align: left;
+}
+}
+
+.contactUs-cont2 {
+    flex: 1;
+    color: whitesmoke;
+}
+
+.contactUs-cont2 p {
+    padding-bottom: 10px;
+}
+
+.contactUs-cont2Btn {
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/*REVIEWS */
+/* PRO TELEFONY */
+@media (max-width: 440px){
+    .reviews {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+.reviewsTopCon {
+    padding-top: 50px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .reviewsTopCon{
+    width: 60%;
+    }
+}
+
+@media (max-width: 440px){
+    .reviewsTopCon {
+    width: 90%;
+    }
+    }
+
+.reviewsTopCon h2 {
+    padding-bottom: 30px;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .reviewsTopCon h2{
+    font-size: 45px;
+    }
+}
+
+.reviewsBottomCons {
+    width: 60%;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black;  */
+    padding-top: 50px;
+    overflow:visible;
+    margin-bottom: 80px;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .reviewsBottomCons{
+    width: 90%;
+    }
+}
+
+/* PRO TELEFONY */
+@media (max-width: 440px){
+    .reviewsBottomCons {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 750px;
+    }
+    }
+
+
+
+.reviewsBottomCons img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+
+/* PRO TABLETY */
+@media (min-width: 768px) and (max-width: 992px){
+    .reviewsBottomCons img{
+    width: 60%;
+    height: 50%;
+    }
+}
+
+
+.reviewsLeftCon, .reviewsRightCon {
+    flex: 1;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 50px;
+    /* align-items: center; */
+}
+
+ .reviewsLeftCon p {
+    /* border: 1px solid red; */
+ 
+}
+/*
+.reviewsRightCon {
+    width: 20%;
+} */
+
+
+.reviewsLeftCon h4, .reviewsRightCon h4 {
+    padding-top: 15px;
+}
+
+
+/*PHOTOGALLERY 2 */
+.photogallery2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo2 {
+    flex-basis: calc(100%/2);
+}
+
+.photogallery2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*FOOTER */
+footer {
+    text-align: center;
+    background-color: var(--hneda);
+    color: white;
+    padding-top: 20px;
+}
+
+footer p {
+    color: #d86269;
+    padding-bottom: 10px;
+}
